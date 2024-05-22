@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 5px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/logo.svg" class="logo" alt="photo of logo" />
+    <main>
+      <div class="left-box">
+        <div class="input-box">
+          <p class="name">Bill</p>
+          <input type="text" class="text" placeholder="0" />
+          <img
+            class="dollar"
+            src="images/icon-dollar.svg"
+            alt="image of dollar"
+          />
+        </div>
+        <p class="name">Select Tip %</p>
+        <div class="btn-box">
+          <button class="select-btn five">5%</button>
+          <button class="select-btn ten">10%</button>
+          <button class="select-btn fifteen">15%</button>
+          <button class="select-btn twenty-five">25%</button>
+          <button class="select-btn fifty">50%</button>
+          <input
+            type="text"
+            class="select-btn select-input"
+            placeholder="Custom"
+          />
+        </div>
+        <div class="input-box">
+          <div class="title-box">
+            <p class="name">Number of People</p>
+            <p class="error">Can't be zero</p>
+          </div>
+          <img
+            class="person-icon"
+            src="images/icon-person.svg"
+            alt="image of person icon"
+          />
+          <input type="text" class="people-input" placeholder="0" />
+        </div>
+      </div>
+      <div class="right-box">
+        <div class="top-box">
+          <div class="total-box">
+            <div class="title-right-box">
+              <p class="name name-right">Tip Amount</p>
+              <p class="slash">/ person</p>
+            </div>
+            <p class="tip-amount">$0.00</p>
+          </div>
+          <div class="total-box">
+            <div class="title-right-box">
+              <p class="name name-right">Total</p>
+              <p class="slash">/ person</p>
+            </div>
+
+            <p class="total-amount">$0.00</p>
+          </div>
+        </div>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Nrosta</a>.
+    </div>
+    <script src="js/js.js"></script>
+  </body>
+</html>
